@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SETTER</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <a href="get_cookies.html">GO TO GET COOKIE PAGE</a><br><br><br>
+        <input type="text" id="data">
+        <button onclick="save()">SAVE</button>
+    </body>
+    <script src="cookie_setgetter.js"></script>
+    <script>
+        function save(){
+            var value = document.getElementById("data").value;
+            setCookie("alok", value, 5);
+            alert("saved!!")
+        }
+    </script>
+</html>
